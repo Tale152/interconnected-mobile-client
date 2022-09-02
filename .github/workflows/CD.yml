@@ -21,7 +21,7 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
           packager: npm
       - name: Download published apk
-        run: eas build:list --json --limit=1 --platform=android | jq '.[0].artifacts.buildUrl' | wget -O interconnected-mobile-client.apk
+        run: wget -O interconnected-mobile-client.apk $( eas build:list --json --limit=1 --platform=android | jq '.[0].artifacts.buildUrl' )
       - name: Rename file
         run: mv interconnected-mobile-client.apk "interconnected-mobile-client-${{ github.ref_name }}.apk"
       - name: Release
