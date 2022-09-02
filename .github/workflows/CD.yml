@@ -1,5 +1,7 @@
 on:
   push:
+    tags:
+      - "v*.*.*"
 
 jobs:
   build-and-release:
@@ -19,4 +21,10 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
           packager: npm
       - name: Download published apk
-        run: eas build:list --json --platform=android | jq '.[1].artifacts.buildUrl'
+        run: eas build:list --json --limit=1 --platform=android | jq '.[0].artifacts.buildUrl' | wget -O interconnected-mobile-client.apk
+      - name: Rename file
+        run: mv interconnected-mobile-client.apk "interconnected-mobile-client-${{ github.ref_name }}.apk"
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: interconnected-mobile-client-${{ github.ref_name }}.apk
