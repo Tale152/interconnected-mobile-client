@@ -6,7 +6,7 @@ TODO
 
 - [About this repository](#about-this-repository)
 - [Software requirements](#software-requirements)
-- [Setup](#setup)
+- [Setup and run](#setup-and-run)
 - [Style enforcement](#style-enforcement)
 - [Visual Studio Code optional useful extensions](#visual-studio-code-optional-useful-extensions)
 - [How to trigger CD to generate an APK on release](#how-to-trigger-cd-to-generate-an-apk-on-release)
@@ -45,7 +45,7 @@ TODO
 
 - Visual Studio Code
 
-## Setup
+## Setup and run
 
 Launch the following command to install globally expo-cli; this is required to run the application on [Expo](https://expo.dev/).
 
