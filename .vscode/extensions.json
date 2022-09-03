@@ -5,6 +5,7 @@
     "dsznajder.es7-react-js-snippets",
     "christian-kohler.npm-intellisense",
     "esbenp.prettier-vscode",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "usernamehw.errorlens"
   ]
 }
