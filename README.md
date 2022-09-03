@@ -54,4 +54,3 @@ git push origin --tags
 - upgrade version in app.json, package.json and package-lock.json on release
 - write README
 - write repo description
-- dependabot
