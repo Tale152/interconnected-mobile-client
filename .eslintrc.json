@@ -12,5 +12,7 @@
     "project": ["./tsconfig.json"]
   },
   "plugins": ["react", "react-native", "import"],
-  "rules": {}
+  "rules": {
+    "max-len": ["warn", 80]
+  }
 }
