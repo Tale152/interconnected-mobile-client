@@ -7,16 +7,15 @@
 # More details at https://github.com/eslint/eslint
 # and https://eslint.org
 
-name: ESLint
+name: ESLint security report
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "master" ]
-  schedule:
-    - cron: '20 23 * * 2'
+  workflow_run:
+    branches:
+      - master
+    types:
+      - completed
+  workflow_dispatch:
 
 jobs:
   eslint:
@@ -36,9 +35,9 @@ jobs:
 
       - name: Run ESLint
         run: npx eslint .
-          --config .eslintrc.js
+          --config package.json
           --ext .js,.jsx,.ts,.tsx
-          --format @microsoft/eslint-formatter-sarif 
+          --format @microsoft/eslint-formatter-sarif
           --output-file eslint-results.sarif
         continue-on-error: true
 
