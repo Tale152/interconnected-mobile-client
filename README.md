@@ -52,7 +52,6 @@ git push origin --tags
 ## TODO list
 
 - upgrade version in app.json, package.json and package-lock.json on release
-- badges
 - write README
 - write repo description
 - dependabot
