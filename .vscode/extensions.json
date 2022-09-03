@@ -1,8 +1,9 @@
 {
-    "recommendations": [
-        "editorconfig.editorconfig",
-        "jundat95.react-native-snippet",
-        "dsznajder.es7-react-js-snippets",
-        "christian-kohler.npm-intellisense"
-    ]
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "jundat95.react-native-snippet",
+    "dsznajder.es7-react-js-snippets",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode"
+  ]
 }
