@@ -4,6 +4,7 @@
     "jundat95.react-native-snippet",
     "dsznajder.es7-react-js-snippets",
     "christian-kohler.npm-intellisense",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens"
   ]
 }
