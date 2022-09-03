@@ -8,6 +8,7 @@
     "dbaeumer.vscode-eslint",
     "eamodio.gitlens",
     "usernamehw.errorlens",
-    "vincaslt.highlight-matching-tag"
+    "vincaslt.highlight-matching-tag",
+    "formulahendry.auto-rename-tag"
   ]
 }
