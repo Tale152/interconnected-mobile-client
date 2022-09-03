@@ -48,9 +48,3 @@ Then push the new tag to the remote repository, triggering [this](https://github
 ```console
 git push origin --tags
 ```
-
-## TODO list
-
-- upgrade version in app.json, package.json and package-lock.json on release
-- write README
-- write repo description
