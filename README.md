@@ -10,3 +10,6 @@ eas build -p android --profile apk (building command)
 - badges
 - write README
 - write repo description
+- dependabot
+- style config
+- suggested vscode extensions
